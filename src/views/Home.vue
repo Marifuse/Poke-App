@@ -15,15 +15,15 @@
       ></v-carousel-item>
       </v-carousel>
       <!-- Cabecera -->
-      <header class="text-center header__container">
+      <header class="text-center header__container pl-2 pr-2">
         <v-img class="mx-auto" width=30em src="https://firebasestorage.googleapis.com/v0/b/pokemon-c05f4.appspot.com/o/pokemon-logo.png?alt=media&token=d2afdcaf-1d89-4c2d-ae72-f043b8a23e31"></v-img>
         <h2>¿Quieres saber la cantidad de Pokémon que hay y sus Características?</h2>
         <h4>Ven y descúbrelo</h4>
       </header>
       <!-- Sección botones -->
       <section class="btn__container">
-        <div class="text-center">
-          <v-btn class="mr-3" rounded color="black" dark to="/apod">🌟 Pokedex 🌟</v-btn>
+        <div class="text-center btn__black">
+          <v-btn rounded color="black" dark to="/pokedex">🌟 Pokedex 🌟</v-btn>
         </div>
       </section>
     <Footer/>
@@ -61,3 +61,26 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+// Sección principal
+.home__container {
+  background-color: rgb(29, 29, 29)
+}
+// Header
+.header__container {
+  background-color: darkred;
+  color: #FFF;
+  padding-bottom: 3em;
+}
+// Sección botones
+.btn__container {
+  margin: 0;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/pokemon-c05f4.appspot.com/o/fondo-1.jpg?alt=media&token=d8924630-13d1-43b0-8154-1de6222bf315) !important;
+  background-size: cover !important;
+}
+.btn__black {
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+</style>
