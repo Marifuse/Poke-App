@@ -22,7 +22,7 @@
       </v-card-text>
       <v-divider></v-divider>
       <div class="my-5 text-center">
-        <v-btn color='black' dark @click="login">🪐 Login 🪐</v-btn>
+        <v-btn color='black' dark @click="login">✪ Login ✪</v-btn>
       </div>
     </v-card>
   </div> 
